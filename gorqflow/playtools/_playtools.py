@@ -14,3 +14,19 @@ def update_dict(d1: dict, d2: dict) -> dict:
         else:
             d1[k] = v
     return d1
+
+
+def print_dict(d: dict, indent: int = 2) -> None:
+    """Pretty print a dictionary with indented values.
+
+    Args:
+        d (dict): The dictionary to be printed.
+    """
+    def _print(_d, current_indent_factor=0):
+        for k, v in _d.items():
+            print(' ' * current_indent_factor*indent + str(k) + ':')
+            if isinstance(v, dict):
+                _print(v, current_indent_factor+1)
+            else:
+                print(' ' * (current_indent_factor+1)*indent + str(v))
+    _print(d)
