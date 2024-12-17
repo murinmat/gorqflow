@@ -7,7 +7,7 @@ packages = ["gorqflow"]
 
 [project]
 name = "gorqflow"
-version = "0.1.0-dev"
+version = "0.2.0-dev"
 dependencies = []
 requires-python = ">=3.11"
 authors = [
