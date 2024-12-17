@@ -1,1 +1,1 @@
-from ._playtools import update_dict
+from ._playtools import update_dict, print_dict
