@@ -19,7 +19,7 @@ license = { file = "LICENSE" }
 keywords = ["gorq", "flow", "gorqflow"]
 
 [project.optional-dependencies]
-some_extra = ["some-package", "other-package"]
+dev = ["pytest", "pytest-cov"]
 
 [project.urls]
 Homepage = 'https://github.com/murinmat/gorqflow'
