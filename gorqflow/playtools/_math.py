@@ -20,3 +20,9 @@ def sub_one(x: int) -> int:
         int: x - 1
     """
     return x - 1
+
+
+def divide(nominator: int | float, denominator: int | float) -> float:
+    if denominator == 0:
+        raise ZeroDivisionError("Cannot divide by zero")
+    return nominator / denominator
