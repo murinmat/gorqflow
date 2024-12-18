@@ -30,3 +30,7 @@ def divide(nominator: int | float, denominator: int | float) -> float:
 
 def power(base: int | float, exponent: int | float) -> float:
     return base ** exponent
+
+
+def sqrt(x: int | float) -> float:
+    return x ** 0.5
