@@ -10,7 +10,9 @@ sources = [
 [project]
 name = "gorqflow"
 dynamic = ["version"]
-dependencies = []
+dependencies = [
+    "numpy"
+]
 requires-python = ">=3.11"
 authors = [
     { name = "Matej Murin", email = "matejmurin01@gmail.com" }
