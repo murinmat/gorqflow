@@ -1,5 +1,5 @@
 import pytest
-from gorqflow.playtools import add_one, sub_one, divide
+from gorqflow.playtools import add_one, sub_one, divide, power
 
 
 def test_add_one():
@@ -17,3 +17,6 @@ def test_divide_ok():
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         divide(15., 0.)
+
+def test_power():
+    assert power(2, 3) == 8
