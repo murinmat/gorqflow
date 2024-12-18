@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def add_one(x: int) -> int:
     """Add one to an integer
 
@@ -34,3 +37,10 @@ def power(base: int | float, exponent: int | float) -> float:
 
 def sqrt(x: int | float) -> float:
     return x ** 0.5
+
+def numpy_add(a: np.ndarray, b: np.ndarray) -> np.ndarray:
+    return a + b
+
+
+def numpy_mul(a: np.ndarray, b: np.ndarray) -> np.ndarray:
+    return a * b
