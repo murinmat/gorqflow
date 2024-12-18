@@ -26,3 +26,7 @@ def divide(nominator: int | float, denominator: int | float) -> float:
     if denominator == 0:
         raise ZeroDivisionError("Cannot divide by zero")
     return nominator / denominator
+
+
+def power(base: int | float, exponent: int | float) -> float:
+    return base ** exponent

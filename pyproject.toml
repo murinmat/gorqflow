@@ -2,8 +2,10 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.setuptools]
-packages = ["gorqflow"]
+[tool.hatch.metadata]
+sources = [
+    {path = "gorqflow-obfuscated/gorqflow", include = "gorqflow"}
+]
 
 [project]
 name = "gorqflow"
