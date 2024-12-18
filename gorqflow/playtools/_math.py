@@ -40,3 +40,7 @@ def sqrt(x: int | float) -> float:
 
 def numpy_add(a: np.ndarray, b: np.ndarray) -> np.ndarray:
     return a + b
+
+
+def numpy_mul(a: np.ndarray, b: np.ndarray) -> np.ndarray:
+    return a * b
