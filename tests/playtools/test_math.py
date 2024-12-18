@@ -1,5 +1,5 @@
 import pytest
-from gorqflow.playtools import add_one, sub_one, divide, power
+from gorqflow.playtools import add_one, sub_one, divide, power, sqrt
 
 
 def test_add_one():
@@ -20,3 +20,6 @@ def test_divide_by_zero():
 
 def test_power():
     assert power(2, 3) == 8
+
+def test_sqrt():
+    assert sqrt(4) == 2
